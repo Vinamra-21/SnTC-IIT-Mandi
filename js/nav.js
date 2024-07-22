@@ -4,11 +4,11 @@ function hideAll(){
     var c = document.getElementById("about");
     var d = document.getElementById("contact");
     var e = document.getElementById("tech");
-    a.style.display="none";
-    b.style.display="none";
-    c.style.display="none";
-    d.style.display="none";
-    e.style.display="none";
+    // a.style.display="none";
+    // b.style.display="none";
+    // c.style.display="none";
+    // d.style.display="none";
+    // e.style.display="none";
 }
 
 function showHome() {
