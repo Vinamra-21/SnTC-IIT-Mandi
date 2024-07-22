@@ -1,15 +1,3 @@
-function hideAll(){
-    var a = document.getElementById("home");
-    var b = document.getElementById("services");
-    var c = document.getElementById("about");
-    var d = document.getElementById("contact");
-    var e = document.getElementById("tech");
-    // a.style.display="none";
-    // b.style.display="none";
-    // c.style.display="none";
-    // d.style.display="none";
-    // e.style.display="none";
-}
 
 function showHome() {
     document.getElementById("home").style.display="block";
