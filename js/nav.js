@@ -12,29 +12,9 @@ function hideAll(){
 }
 
 function showHome() {
-    hideAll();
     document.getElementById("home").style.display="block";
 }
 
-function showTech() {
-    hideAll();
-    document.getElementById("tech").style.display="block";
-}
-
-function showServices() {
-    hideAll();
-    document.getElementById("services").style.display="block";
-}
-
-function showAbout() {
-    hideAll();
-    document.getElementById("about").style.display="block";
-}
-
-function showContact() {
-    hideAll();
-    document.getElementById("contact").style.display="block";
-}
 
 function showHighlight(){
     var btns = document.getElementsByClassName("top-text");
@@ -49,3 +29,34 @@ function showHighlight(){
     }
     showHome();
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all typewriter elements
+    const elementsToAnimate = document.querySelectorAll('.typewriter1, .typewriter2, .typewriter3, .typewriter4');
+
+    // Function to handle adding the animation class
+    function addAnimationClass(element) {
+        // Remove the class to restart animation
+        element.classList.remove('animate');
+        // Trigger reflow to restart animation
+        void element.offsetWidth;
+        // Add the animation class
+        element.classList.add('animate');
+    }
+
+    // Create an intersection observer
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add animation class when element is in view
+                addAnimationClass(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Observe each element
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});

@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/wheel.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/hexagon.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/raphael.min.js"></script>
@@ -25,19 +25,21 @@
     <script src="js/nav.js"></script>
 
 </head>
-<body id="body-content">
+<body id="body-content" style="background-color: black;">
 
-    <header>
-        <div class="top">
-            <a href="#" class="top-text active-main" id="t1" onclick="showHome()">Home</a>
-            <a href="#" class="top-text" id="t2" onclick="showServices()">Services</a>
-            <span id="mid-logo">
-                <a href="#"><img class="logo" src="./images/logo-mid.jpg" onclick="showAbout()" ></a>
-            </span>
-            <a href="#" class="top-text" id="t3" onclick="showTech()">Inter IIT</a>
-            <a href="#" class="top-text" id="t4" onclick="showContact()">Contact</a>
+    <section id="about">
+    
+    <header class="content content-boxers " >
+        <div class="top" style="align-items: center;justify-content: center;position: relative;margin-top: 0;">
+            <div style="pointer-events: auto; "><a href="#clubs" class="top-text " id="t1" onclick="showHome()" >Clubs</a></div>
+            <div style="pointer-events: auto; "><a href="#offerings" class="top-text" id="t2" >Offerings</a></div>
+            <div style="pointer-events: auto; "><span id="mid-logo">
+                <a href="#about"><img class="logo" src="./images/logo_nobg.png"  ></a>
+            </span></div>
+            <div style="pointer-events: auto; "><a href="#Inter-IIT" class="top-text" id="t3" >Inter IIT</a></div>
+            <div style="pointer-events: auto; "><a href="#contactUs" class="top-text" id="t4" >Contact</a></div>
         </div>
-        <h1 class="def">
+        <h1 class="def" style="font-size: 1.5vw;align-items: center;">
             Science and Technology Council
             <span id="college">
                 IIT Mandi
@@ -45,210 +47,215 @@
         </h1>
     </header>
 
-    <div class="container marketing" id="home">
-        <div class="row featurette">
-            <div class="col-md-5">
-                <div id="indexDiv" class="wheelNav400"></div>
-            </div>
-            <div class="col-md-7" id="wheeldef">
-
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" id="tabDefaultNav" hidden="hidden">
-                    <li><a class="active" href="#tabSNTC" data-toggle="tab">SNTC</a></li>
-                    <li><a href="#tabProgramming" data-toggle="tab">Programming</a></li>
-                    <li><a href="#tabRobotronics" data-toggle="tab">Robotronics</a></li>
-                    <li><a href="#tabEcell" data-toggle="tab">Ecell</a></li>
-                    <li><a href="#tabYantrik" data-toggle="tab">Yantrik</a></li>
-                    <li><a href="#tabNirmaan" data-toggle="tab">Nirmaan</a></li>
-                    <li><a href="#tabStac" data-toggle="tab">STAC</a></li>
-                    <li><a href="#tabKbg" data-toggle="tab">X</a></li>
-                    <li><a href="#tabSae" data-toggle="tab">X</a></li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div class="tab-pane fade in active" id="tabSNTC">
-                      <h2 class="featurette-heading">Science and Technology Council</h2>
-                      <h3>
-                          <span class="text-muted">
-                            The technical society of IIT Mandi or Science and Technology Council (SNTC) IIT Mandi consists of technical clubs for programming, Bioengineering, automotive engineering, robotics, astronomy, mechanics, civil engineering and entrepreneurship. One unique feature of the Institute’s Technical Society is that all the clubs support open participation i.e. all the students are free to join a club at any point of time and dedicated students are rewarded accordingly. Members of the technical society also enthusiastically represent the college in national events and have brought several laurels for the institute.
-                          </span>
-                      </h3>
-                      <!-- <p class="lead"><a href="http://pc.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p> -->
-                  </div>
-                    <div class="tab-pane fade" id="tabProgramming">
-                        <h2 class="featurette-heading">Programming Club (KamandPrompt)</h2>
-                        <h3>
-                            <span class="text-muted">
-                                An enthusiastic coder ? Here is the club for you. It is a club dedicated to programming related activities. It keeps you updated with all the programming related activities and competitions. It also organizes several competitions and workshops to increase coding skills. The Association for Computing and Machinery(ACM) Chapter at IIT Mandi organizes various guest lectures and tutorials from time to time.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="http://pc.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabRobotronics">
-                        <h2 class="featurette-heading">Robotronics Club</h2>
-                        <h3>
-                            <span class="text-muted">
-                                Robotics + Electronics = Robotronics. This club works in the field of both robotics and electronics. In electronics domain, it works on analog and digital electronics helping in developing practical skills in building and designing circuits. On the other hand in robotics it provides everything that students need to build robots : workspace , tools, supplies, money and experienced people to answer questions and help with projects.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="http://robotronics.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabEcell">
-                        <h2 class="featurette-heading">Entrepreneurship Cell</h2>
-                        <h3>
-                            <span class="text-muted">
-                                E-Cell is a holographic abbreviation adopted by the entrepreneurship club of IIT Mandi. It's an alumnus initiation and currently is the stewardship of a team of five inter-disciplinary students with the mentorship of Dr. Satvasheel Powar, churning their ideas to reach the various aspects of what lies in this "business" of reaching the society. And as the name celebrates our crazy love for subjects related to business and its disciplinaries we always strive to give a glimpse of the potions of business by conducting multifarious of events.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="https://ecell.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabYantrik">
-                        <h2 class="featurette-heading">Yantrik Club</h2>
-                        <h3>
-                            <span class="text-muted">
-                                As a part of the technical council of IIT Mandi, this club plays a cruical role in the field of mechanical engineering. It focuses on developing green and effective energy methods. It organizes activities like arCAD, MechFest.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="https://yantrikiitmandi.github.io/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabNirmaan">
-                        <h2 class="featurette-heading">Nirmaan Club</h2>
-                        <h3>
-                            <span class="text-muted">
-                                Nirmaan Club aims at creating a realization among students of the importance of Civil Engineering aspects in day to day which are often ignored by organizing events, workshops, quizzes, projects etc.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="https://www.facebook.com/groups/802179339895110/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabStac">
-                        <h2 class="featurette-heading">Space Technology and Astronomy Cell (STAC)</h2>
-                        <h3>
-                            <span class="text-muted">
-                                STAC aims at making students familiar with everything related to Astronomy, Space and Open Source development in the field of Space Technology. The club has 2 telescopes, a 12" telescope under construction, a pair of binoculars and organizes frequent star-gazing sessions and undertakes several interesting technical projects.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="http://stac.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabKbg">
-                        <h2 class="featurette-heading">Kamand Bioengineering Group (KBG)</h2>
-                        <h3>
-                            <span class="text-muted">
-                                At the juncture of biology and engineering, KBG offers exposure to a multitude of outlooks and a broad variety of topics including computational biology, genetics, neuroscience, biomechanics, biotechnology, nanotechnology, biomimetics and other associated forks diverging from the interplay of nature's craft and the intellectual desire to grasp it.
-                            </span>
-                        </h3>
-                        <p class="lead"><a href="https://www.instagram.com/kbg_iitmandi/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
-                    <div class="tab-pane fade" id="tabSae">
-                        <h2 class="featurette-heading">Society of Automative Engineers (SAE)</h2>
-                        <h3>
-                            <span class="text-muted">
-                                SAE IIT Mandi is a enthusiastic, motivated and passionate team of engineers whose interest resides in gears, suspensions, engines, brakes etc., talking in a nutshell an automobile.                            </span>
-                        </h3>
-                        <p class="lead"><a href="https://clubsae.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
-                    </div>
+    <div class="container marketing content-boxers">
+        <div class="col-xs-12 col-sm-12 col-md-12  col-lg-7">
+            <div class="service-head typewriter1">Science and </div>
+            <div class="service-head typewriter2">Technology Council</div>
+            <p class="list-def">SnTC is IIT Mandi’s Technical Society. It is a body of students advised by faculty. The major events for SnTC are Inter IIT Tech Meet, Avishkar and Utkarsh. SnTC constitutes of eight prominent clubs.
+                <div class="list-def">
+                    Each club is coordinated by coordinators and comprises of students of similar interest. Each club is advised by a faculty advisor and a co-advisor. All the clubs are open for all the students of IIT Mandi. However, a core team is formed for efficient running of the club.
                 </div>
+            </p>
+        </div>
+        <div class="separator col-lg-1 container "><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+        <div class="content-boxers col-sm-12 col-md-12 col-lg-4" style="margin-bottom: 150px;">
 
-            </div>
+            <img class="logo-def content-boxers" src="./images/Xpecto.png" style="height: 250px;width: 300px; pointer-events: auto;">
+            <button class="btn btn-lg btn-default content-boxers" style="margin-top: 10px ;pointer-events: auto;"><a href="">IIT Mandi's Signature </a></button>
         </div>
     </div>
-    <div class="container marketing">
+    </section >
+    <section id="clubs" >
+        <div class="container service-head col-xs-12 col-sm-12 col-md-12 col-lg-12 typewriter1" style="justify-content: center;align-items: center;padding-left:5vw ;">Technical Clubs</div><br><br><br>
+        <div class="container marketing content-boxers col-md-12" id="home"style="pointer-events: auto;" >
+            <div class="row featurette  content-boxers" style="pointer-events: auto;align-items: center;justify-content: center;">
+                <div class="col-lg-5 col-md-12  content-boxers" style="pointer-events: auto;align-items: center;">
+                    <div id="indexDiv" class="wheelNav400 col-md-12  content-boxers" style="pointer-events: auto;align-items: center;"></div>
+                </div>
+                <div class="col-lg-7 col-md-12 content-boxers" id="wheeldef" style="pointer-events: auto;align-items: center;">
+    
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs  content-boxers" id="tabDefaultNav" hidden="hidden" style="pointer-events: auto;">
+                        <li><a class="active" href="#tabSNTC" data-toggle="tab">SNTC</a></li>
+                        <li><a href="#tabProgramming" data-toggle="tab">Programming</a></li>
+                        <li><a href="#tabRobotronics" data-toggle="tab">Robotronics</a></li>
+                        <li><a href="#tabEcell" data-toggle="tab">Ecell</a></li>
+                        <li><a href="#tabYantrik" data-toggle="tab">Yantrik</a></li>
+                        <li><a href="#tabNirmaan" data-toggle="tab">Nirmaan</a></li>
+                        <li><a href="#tabStac" data-toggle="tab">STAC</a></li>
+                        <li><a href="#tabKbg" data-toggle="tab">X</a></li>
+                        <li><a href="#tabSae" data-toggle="tab">X</a></li>
+                    </ul>
+    
+                    <!-- Tab panes -->
+                    <div class="tab-content  content-boxers" style="pointer-events: auto;">
+                      <div class="tab-pane fade in active" id="tabSNTC">
+                          <h2 class="featurette-heading">Science and Technology Council</h2>
+                          <h3>
+                              <span class="text-muted">
+                                The technical society of IIT Mandi or Science and Technology Council (SNTC) IIT Mandi consists of technical clubs for programming, Bioengineering, automotive engineering, robotics, astronomy, mechanics, civil engineering and entrepreneurship. One unique feature of the Institute’s Technical Society is that all the clubs support open participation i.e. all the students are free to join a club at any point of time and dedicated students are rewarded accordingly. Members of the technical society also enthusiastically represent the college in national events and have brought several laurels for the institute.
+                              </span>
+                          </h3>
+                          <!-- <p class="lead"><a href="http://pc.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p> -->
+                      </div>
+                        <div class="tab-pane fade" id="tabProgramming">
+                            <h2 class="featurette-heading">Programming Club (KamandPrompt)</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    An enthusiastic coder ? Here is the club for you. It is a club dedicated to programming related activities. It keeps you updated with all the programming related activities and competitions. It also organizes several competitions and workshops to increase coding skills. The Association for Computing and Machinery(ACM) Chapter at IIT Mandi organizes various guest lectures and tutorials from time to time.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="http://pc.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabRobotronics">
+                            <h2 class="featurette-heading">Robotronics Club</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    Robotics + Electronics = Robotronics. This club works in the field of both robotics and electronics. In electronics domain, it works on analog and digital electronics helping in developing practical skills in building and designing circuits. On the other hand in robotics it provides everything that students need to build robots : workspace , tools, supplies, money and experienced people to answer questions and help with projects.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="http://robotronics.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabEcell">
+                            <h2 class="featurette-heading">Entrepreneurship Cell</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    E-Cell is a holographic abbreviation adopted by the entrepreneurship club of IIT Mandi. It's an alumnus initiation and currently is the stewardship of a team of five inter-disciplinary students with the mentorship of Dr. Satvasheel Powar, churning their ideas to reach the various aspects of what lies in this "business" of reaching the society. And as the name celebrates our crazy love for subjects related to business and its disciplinaries we always strive to give a glimpse of the potions of business by conducting multifarious of events.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="https://ecell.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabYantrik">
+                            <h2 class="featurette-heading">Yantrik Club</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    As a part of the technical council of IIT Mandi, this club plays a cruical role in the field of mechanical engineering. It focuses on developing green and effective energy methods. It organizes activities like arCAD, MechFest.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="https://yantrikiitmandi.github.io/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabNirmaan">
+                            <h2 class="featurette-heading">Nirmaan Club</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    Nirmaan Club aims at creating a realization among students of the importance of Civil Engineering aspects in day to day which are often ignored by organizing events, workshops, quizzes, projects etc.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="https://www.facebook.com/groups/802179339895110/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabStac">
+                            <h2 class="featurette-heading">Space Technology and Astronomy Cell (STAC)</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    STAC aims at making students familiar with everything related to Astronomy, Space and Open Source development in the field of Space Technology. The club has 2 telescopes, a 12" telescope under construction, a pair of binoculars and organizes frequent star-gazing sessions and undertakes several interesting technical projects.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="http://stac.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabKbg">
+                            <h2 class="featurette-heading">Kamand Bioengineering Group (KBG)</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    At the juncture of biology and engineering, KBG offers exposure to a multitude of outlooks and a broad variety of topics including computational biology, genetics, neuroscience, biomechanics, biotechnology, nanotechnology, biomimetics and other associated forks diverging from the interplay of nature's craft and the intellectual desire to grasp it.
+                                </span>
+                            </h3>
+                            <p class="lead"><a href="https://www.instagram.com/kbg_iitmandi/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                        <div class="tab-pane fade" id="tabSae">
+                            <h2 class="featurette-heading">Society of Automative Engineers (SAE)</h2>
+                            <h3>
+                                <span class="text-muted">
+                                    SAE IIT Mandi is a enthusiastic, motivated and passionate team of engineers whose interest resides in gears, suspensions, engines, brakes etc., talking in a nutshell an automobile.                            </span>
+                            </h3>
+                            <p class="lead"><a href="https://clubsae.iitmandi.co.in/" target="_blank" class="btn btn-lg btn-default">Visit Website</a></p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cells">
+
+    </section>
+    <section id="offerings" >
+    <div class="container marketing content-boxers" >
         <div id="services">
-            <h3>Services currently hosted on the SNTC Server</h3>
-            <ul class="service-list">
+            <div class="container service-head col-xs-12 col-sm-12 col-md-12 col-lg-12 typewriter1" style="text-align: left;">Offerings by SnTC</div>
+            <ul class="service-list" style="list-style-type: none; ">
                 <li>
-                    <div class="service-card">
-                        <h3>Judge0 API</h3>
-                        <p> Allows users to compile their programs in a range of language options.</p>
+                    <div class="service-card ">
+                        <h3><div style="pointer-events: auto; "><a href="./events.html">Organising and Managing Events</a></div></h3>
+                        <p> SnTC organizes and manages major events like Expecto.</p>
                     </div>
                 </li>
                 <li>
                     <div class="service-card">
-                        <h3>Websites for SNTC Clubs</h3>
-                        <p>The websites for all clubs under SNTC will be hosted on SNTC Server.</p>
+                        <h3><div style="pointer-events: auto; "><a href="./projects.html" >Project Work</a></div></h3>
+                        <p>SnTC offers and manages all the projects like URC,Cansat etc.</p>
                     </div>
                 </li>
                 <li>
                     <div class="service-card">
-                        <h3>Student Projects</h3>
+                        <h3><div style="pointer-events: auto; "><a href="https://saic.iitmandi.co.in/" target="_blank"  >Hosting Services</a></div></h3>
                         <p>Student Projects can also be hosted on SNTC Server.</p>
                     </div>
                 </li>
                 <li>
                     <div class="service-card">
-                        <h3>Technical Induction Program</a></h3>
+                        <h3><div style="pointer-events: auto; "><a href="https://tip.iitmandi.co.in" target="_blank" >Technical Induction Program</a></div></h3>
                         <p> Aimed at introducing the participants with key technical skills.</p>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
+    </section>
 
-    <div class="container marketing" id="about">
-        <div class="col-xs-9 col-sm-9 col-md-7 col-md-push-1">
-            <div class="service-head">Science and Technology Council</div>
-            <p class="list-def">SnTC ,short for, Science and Technology Council is IIT Mandi’s Technical Society. It is a body of students advised by faculty. The major events for SnTC are Inter IIT Tech Meet, Avishkar and Utkarsh. SnTC constitutes of following clubs:
-                <ul class="list-def" type="can">
-                    <li>Robotronics Club</li>
-                    <li>Kamand Bioengineering Group (KBG)</li>
-                    <li>Space Technology and Astronomy Cell (STAC)</li>
-                    <li>Yantrik Club</li>
-                    <li>Programming Club</li>
-                    <li>Nirmaan Club</li>
-                    <li>Entrepreneurship Cell</li>
-                    <li>Society of Automative Engineers</li>
-                </ul>
-                <div class="list-def">
-                    Each club is coordinated by two coordinators and comprises of students of similar interest. Each club is advised by a faculty advisor and a co-advisor. All the clubs are open for all the students of IIT Mandi. However, a core team is formed for efficient running of the club.
-                </div>
-            </p>
+    <section id="Inter-IIT" >
+        <div class="container marketing content-boxers">
+            <div class="col-xs-12 col-sm-12 col-md-11 col-lg-7">
+                <div class="service-head typewriter1 typewriter3">Inter-IIT </div>
+                <div class="service-head typewriter2 typewriter4">Tech Meet</div>
+                <p class="list-def">Inter IIT Tech Meet is the annual technological competition organized by the Indian Institutes of Technology and qualifies as the only technical event wherein all the IITs participate. This event is hosted in cycle by one of the participating institutions. At end of each Tech Meet the next host IIT is chosen by mutual consensus.
+                    <div class="list-def">
+                        IIT Mandi is proud to display its achievements and strides displayed by our brilliant contingents.
+                    </div>
+                </p>
+            </div>
+            <div class="separator col-lg-1 container "><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            <div class="content-boxers col-sm-12 col-md-12  col-lg-4" style="margin-bottom: 1vw; ">
+                <img class="logo-def content-boxers" src="./images/Achievements.png" style="height: 250px;width: 300px; pointer-events: auto;margin-top: 0;">
+                <button class="btn btn-lg btn-default content-boxers" style="margin-top: 10px ;pointer-events: auto;"><a href="./achievements.html">Achievements </a></button>
+            </div>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-5">
-                <img class="logo-def" src="./images/logo-mid.jpg" >
-        </div>
+    </section>
+<section id="contactUs" >
+    <div class="container marketing content-boxers" id="contact">
+        <div class=" col-lg-12 col-sm-12 contact-right circle-holder content-boxers" style="padding-top: 0;margin-top: 0;">
+            <img src="images/vaibhav.jpg" class="circle " >
     </div>
-
-    <div style="padding-bottom: 65px;" class="container marketing" id="tech">
-        
-        <div class="col-xs-9 col-sm-9 col-md-7 col-md-push-1">
-            <div class="service-head">Inter-IIT Tech Meet</div>
-            <br>
-            <p class="list-def">Inter IIT Tech Meet is the annual technological competition organized by the Indian Institutes of Technology and qualifies as the only technical event wherein all the IITs participate. This event is hosted in cycle by one of the participating institutions. At end of each Tech Meet the next host IIT is chosen by mutual consensus.
-                <div class="list-def">
-                    IIT Mandi is proud to display its achievements and strides displayed by our brilliant contingents.
-                    <!--ul class="list-def" type="can">
-                        <h3><a href="TM_2019.html"><li>Inter IIT Tech Meet - 2019</li></a></h3>
-                    </ul-->
-                    <h3></h3>
-                </div>
-            </p>
-        </div>
-        <div class="container col-xs-3 col-sm-3 col-md-5 col-lg-4" style="padding: 0;">
-            <div><a href="inter_iit.html"><img class="logo-def" src="./images/Achievements.png" ></a>
-            <p ><a class="btn btn-primary stretched-link" href="inter_iit.html">Achievements</a></p></div>
+        <div class="list-head col-lg-12 col-sm-12 contact-right circle-holder content-boxers" style="padding-top: 0;margin-top: 0;">
+            <p class="speaker-text speaker-name">Vaibhav Kesharwani</p>
+            <p class="speaker-text speaker-about">Technical Secretary</p>
+            <div style="pointer-events: auto;"><p class="speaker-text speaker-about"><i class="fas fa-envelope"></i><a class="speaker-text speaker-about" href="mailto:technical_secretary@students.iitmandi.ac.in"> technical_secretary@students.iitmandi.ac.in</a> </p></div>
             
     </div>
+    <div class="container marketing content-boxers " >
+        <div class="col-lg-12" style="text-align: center;padding-top: 3vw;"> For any queries related to Science and Technology Council (SnTC) or any of its clubs,
+        <br>We are always here to help you.Please contact the Core Team.</div>
+       
     </div>
-
-    <div class="container marketing" id="contact">
-        <div class="list-head col-xs-7 col-sm-7 col-md-7 contact-left">
-            For any queries related to Science and Technology Council (SNTC) or any of its clubs, please contact the Technical Secretary at the given details.
-        </div>
-        <div class="list-head col-xs-5 col-sm-5 col-md-5 contact-right circle-holder">
-                <img src="images/vaibhav.jpeg" class="circle">
-                <br>
-                <p class="speaker-text speaker-name">Vaibhav Kesharwani</p>
-                <p class="speaker-text speaker-about">Technical Secretary</p>
-                <p class="speaker-text speaker-about"><i class="fas fa-envelope"></i><a class="speaker-text speaker-about" href="mailto:technical_secretary@students.iitmandi.ac.in"> technical_secretary@students.iitmandi.ac.in</a> </p>
-        </div>
+      
     </div>
+</section >
     <footer>
-        <div class="container" >
-            <p style="text-align: center;"><a href="SnTC_core.html" class="footer-txt">SnTC Core Team</a></p>
-            <p style="text-align: center;" class="footer-txt">Copyright © 2024 SnTC,IIT Mandi</p>
+        <div class="container content-boxers" >
+            <div style="pointer-events: auto;"><p style="text-align: center;"><a href="SnTC_core.html" class="footer-txt">SnTC Core Team</a></p></div>
+            <p style="text-align: center;font-size: 1vw;" class="footer-txt" >Copyright © 2024 All Rights Reserved by SnTC,IIT Mandi</p>
         </div>
     </footer>
-
+</div>
     <script src="https://cdn.jsdelivr.net/npm/hybicon@1.4.0/js/hybicon.min.js"></script>
 </body>
 </html>
