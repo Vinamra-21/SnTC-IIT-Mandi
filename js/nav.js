@@ -7,14 +7,14 @@ function showHome() {
 function showHighlight(){
     var btns = document.getElementsByClassName("top-text");
     console.log(btns);
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active-main");
-          current[0].className = current[0].className.replace(" active-main", "");
-          this.className += " active-main";
-          console.log(current);
-        });
-    }
+    // for (var i = 0; i < btns.length; i++) {
+    //     btns[i].addEventListener("click", function() {
+    //       var current = document.getElementsByClassName("active-main");
+    //       current[0].className = current[0].className.replace(" active-main", "");
+    //       this.className += " active-main";
+    //       console.log(current);
+    //     });
+    // }
     showHome();
 }
 
@@ -48,3 +48,38 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+
+function toggleDropdown() {
+    const navLinksContainer = document.querySelector('.nav-links');
+    const dropdownButton = document.querySelector('.dropdown-button');
+
+    navLinksContainer.classList.toggle('display');
+    dropdownButton.classList.toggle('active');
+}
+
+// Function to close the dropdown menu
+function closeDropdown() {
+    const navLinksContainer = document.querySelector('.nav-links');
+    const dropdownButton = document.querySelector('.dropdown-button');
+
+    if (navLinksContainer.classList.contains('display')) {
+        navLinksContainer.classList.remove('display');
+        dropdownButton.classList.remove('active');
+    }
+}
+
+document.addEventListener('click', (event) => {
+    const dropdownButton = document.querySelector('.dropdown-button');
+    const navLinksContainer = document.querySelector('.nav-links');
+    const isClickInside = navLinksContainer.contains(event.target) || dropdownButton.contains(event.target);
+
+    if (!isClickInside && navLinksContainer.classList.contains('display')) {
+        closeDropdown();
+    }
+});
+
+function clubClick() {
+    showHome();
+    closeDropdown();
+}

@@ -11,11 +11,11 @@ body {
 
 
 .content-boxers {
-    position: relative;
+    /* position: relative; */
     padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0); 
     color: white;
-    z-index: 4; /* Ensure it is above the hexagon background */
+    z-index: 4; 
     align-items: center;
     justify-content: center;
     pointer-events: none;
@@ -37,6 +37,7 @@ section {
     -webkit-text-fill-color: transparent;
     letter-spacing: 5px;
     font-size: 6rem;
+    font-weight: 200;
     overflow: hidden;
     white-space: nowrap;
     opacity: 0; /* Start hidden */

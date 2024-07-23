@@ -23,29 +23,49 @@
     <script src="js/documentation.min.js"></script>
     <script src="js/spinit.min.js"></script>
     <script src="js/nav.js"></script>
+    <script >window.onload = showHome() </script>
 
 </head>
-<body id="body-content" style="background-color: black;">
+<body id="body-content" >
 
     <section id="about">
     
-    <header class="content content-boxers " >
-        <div class="top" style="align-items: center;justify-content: center;position: relative;margin-top: 0;">
-            <div style="pointer-events: auto; "><a href="#clubs" class="top-text " id="t1" onclick="showHome()" >Clubs</a></div>
-            <div style="pointer-events: auto; "><a href="#offerings" class="top-text" id="t2" >Offerings</a></div>
-            <div style="pointer-events: auto; "><span id="mid-logo">
-                <a href="#about"><img class="logo" src="./images/logo_nobg.png"  ></a>
-            </span></div>
-            <div style="pointer-events: auto; "><a href="#Inter-IIT" class="top-text" id="t3" >Inter IIT</a></div>
-            <div style="pointer-events: auto; "><a href="#contactUs" class="top-text" id="t4" >Contact</a></div>
-        </div>
-        <h1 class="def" style="font-size: 1.5vw;align-items: center;">
-            Science and Technology Council
-            <span id="college">
-                IIT Mandi
-            </span>
-        </h1>
-    </header>
+        <header class="content-boxers">
+            <div class="header-content">
+                <div class="logo-container" style="pointer-events: auto;">
+                    <a href="#about">
+                        <img class="logo" src="./images/logo_nobg.png" alt="Logo" height="90px">
+                    </a>
+                    <button class="dropdown-button" onclick="toggleDropdown()">
+                        <svg class="icon-menu" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16m-16 6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg class="icon-close" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <h1 class="def">
+                    Science and Technology Council
+                    <span id="college">
+                        IIT Mandi
+                    </span>
+                </h1> 
+                <nav class="oval-nav">
+                    <div class="nav-links">
+                        <div style="pointer-events: auto; "><a href="#clubs" class="top-text " id="t2" onclick="clubClick()">Clubs</a></div>
+                        <div style="pointer-events: auto; "><a href="#cells" class="top-text " onclick="closeDropdown()" id="t1">Cells</a></div>
+                        <div style="pointer-events: auto; "><a href="#offerings" class="top-text" onclick="closeDropdown()" id="t3">Offerings</a></div>
+                        <div style="pointer-events: auto; "><a href="#Inter-IIT" class="top-text" onclick="closeDropdown()" id="t4">Inter-IIT</a></div>
+                        <div style="pointer-events: auto; "><a href="#contactUs" class="top-text" onclick="closeDropdown()" id="t5">Contact</a></div>
+                        <div style="pointer-events: auto; "><a href="./SnTC_core.html" class="top-text"  onclick="closeDropdown()" id="t6">Team SnTC</a></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+
 
     <div class="container marketing content-boxers">
         <div class="col-xs-12 col-sm-12 col-md-12  col-lg-7">
@@ -176,7 +196,36 @@
         </div>
     </section>
     <section id="cells">
-
+        <div class="container service-head col-xs-12 col-sm-12 col-md-12 col-lg-12 typewriter1" style="justify-content: left;align-items:center ;padding-left:5vw ;">Cells @ IIT Mandi</div><br><br><br>
+        <div class="cells-container content-boxers" style="pointer-events: auto;">
+            <div class="container2">
+            <div class="cells-box happy-color-1">
+                <div class="cells-overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus consequat commodo. Vivamus tempor purus nec consequat blandit. Sed finibus scelerisque nisl, et laoreet dui pulvinar eget. Cras bibendum leo justo, ac pulvinar tellus varius vitae. Quisque nec congue nulla. Nullam mollis ac velit vel sodales. Donec ultrices risus dui, nec luctus arcu interdum in. Ut dapibus mauris ut ullamcorper gravida. Aliquam erat volutpat.</p>
+                </div>
+                <p class="head-p">GDSC</p>
+            </div>
+            <div class="cells-box happy-color-2">
+                <div class="cells-overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus consequat commodo. Vivamus tempor purus nec consequat blandit. Sed finibus scelerisque nisl, et laoreet dui pulvinar eget. Cras bibendum leo justo, ac pulvinar tellus varius vitae. Quisque nec congue nulla. Nullam mollis ac velit vel sodales. Donec ultrices risus dui, nec luctus arcu interdum in. Ut dapibus mauris ut ullamcorper gravida. Aliquam erat volutpat.</p>
+                </div>
+                <p class="head-p">Heuristics</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="cells-box happy-color-3">
+                <div class="cells-overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus consequat commodo. Vivamus tempor purus nec consequat blandit. Sed finibus scelerisque nisl, et laoreet dui pulvinar eget. Cras bibendum leo justo, ac pulvinar tellus varius vitae. Quisque nec congue nulla. Nullam mollis ac velit vel sodales. Donec ultrices risus dui, nec luctus arcu interdum in. Ut dapibus mauris ut ullamcorper gravida. Aliquam erat volutpat.</p>
+                </div>
+                <p class="head-p">Game Dev</p>
+            </div>
+            <div class="cells-box happy-color-4">
+                <div class="cells-overlay">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam faucibus consequat commodo. Vivamus tempor purus nec consequat blandit. Sed finibus scelerisque nisl, et laoreet dui pulvinar eget. Cras bibendum leo justo, ac pulvinar tellus varius vitae. Quisque nec congue nulla. Nullam mollis ac velit vel sodales. Donec ultrices risus dui, nec luctus arcu interdum in. Ut dapibus mauris ut ullamcorper gravida. Aliquam erat volutpat.</p>
+                </div>
+                <p class="head-p">SAIC</p>
+            </div>
+        </div>
     </section>
     <section id="offerings" >
     <div class="container marketing content-boxers" >
@@ -214,7 +263,13 @@
 
     <section id="Inter-IIT" >
         <div class="container marketing content-boxers">
-            <div class="col-xs-12 col-sm-12 col-md-11 col-lg-7">
+            
+            <div class="content-boxers col-sm-12 col-md-12  col-lg-4" >
+                <img class="logo-def content-boxers" src="./images/Achievements.png" style="height: 250px;width: 300px; pointer-events: auto;margin-top: 0;">
+                <button class="btn btn-lg btn-default content-boxers" style="margin-top: 10px ;pointer-events: auto;"><a href="./achievements.html">Achievements </a></button>
+            </div>
+            <div class="separator col-lg-1 col-sm-1 col-xs-1 col-md-1 container "><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7">
                 <div class="service-head typewriter1 typewriter3">Inter-IIT </div>
                 <div class="service-head typewriter2 typewriter4">Tech Meet</div>
                 <p class="list-def">Inter IIT Tech Meet is the annual technological competition organized by the Indian Institutes of Technology and qualifies as the only technical event wherein all the IITs participate. This event is hosted in cycle by one of the participating institutions. At end of each Tech Meet the next host IIT is chosen by mutual consensus.
@@ -222,11 +277,6 @@
                         IIT Mandi is proud to display its achievements and strides displayed by our brilliant contingents.
                     </div>
                 </p>
-            </div>
-            <div class="separator col-lg-1 container "><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
-            <div class="content-boxers col-sm-12 col-md-12  col-lg-4" style="margin-bottom: 1vw; ">
-                <img class="logo-def content-boxers" src="./images/Achievements.png" style="height: 250px;width: 300px; pointer-events: auto;margin-top: 0;">
-                <button class="btn btn-lg btn-default content-boxers" style="margin-top: 10px ;pointer-events: auto;"><a href="./achievements.html">Achievements </a></button>
             </div>
         </div>
     </section>
@@ -251,7 +301,6 @@
 </section >
     <footer>
         <div class="container content-boxers" >
-            <div style="pointer-events: auto;"><p style="text-align: center;"><a href="SnTC_core.html" class="footer-txt">SnTC Core Team</a></p></div>
             <p style="text-align: center;font-size: 1vw;" class="footer-txt" >Copyright © 2024 All Rights Reserved by SnTC,IIT Mandi</p>
         </div>
     </footer>
