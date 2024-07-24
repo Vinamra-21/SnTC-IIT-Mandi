@@ -216,6 +216,8 @@ header {
     margin-top:1%;
     color:#BFBFBF;
     margin-bottom: 50px;
+    padding-top: 25px;
+
 }
 
 #college {
@@ -440,7 +442,8 @@ header {
     }
 
     .service-head{
-        font-size: 5vw !important;
+        font-size: 6vw !important;
+        font-weight: 100;
         text-align: left;
     }
 
