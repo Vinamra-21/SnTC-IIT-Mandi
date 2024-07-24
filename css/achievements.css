@@ -28,7 +28,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
 }
 
 .card {
@@ -38,8 +39,8 @@ body {
     margin: 15px 0;
     overflow: hidden;
     position: relative;
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
     cursor: pointer;
     transition: height 0.3s ease-in-out, transform 0.3s ease-in-out;
     display: flex;
@@ -78,13 +79,13 @@ body {
 }
 
 .card:hover {
-    height: 500px; /* Increased height */
+    height: 400px; 
     transform: scale(1.05);
     
 }
 
 .card4:hover,.card1:hover {
-    height: 800px; /* Increased height */
+    height: 700px; 
     transform: scale(1.05);
 }
 
@@ -96,26 +97,22 @@ body {
     margin: 0;
 }
 @media only screen and (max-width: 720px) {
-    .card {
-        height: 400px;
-    }
+
     .card:hover {
-        height: 600px;
+        height: 400px;
     }
     .card4:hover,.card1:hover {
         height: 1000px;
     }
     
 }
-@media screen and (max-width: 500px) {
-    .card {
-        height: 600px;
-    }
+@media screen and (max-width: 550px) {
+
     .card:hover {
-        height: 900px;
+        height: 500px;
     }
     .card4:hover,.card1:hover {
-        height: 1900px;
+        height: 900px;
     }
     
 }
