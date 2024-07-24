@@ -120,8 +120,46 @@ footer.main {
 }
 
 .footer-txt {
-	font-size: 3.3vw;
 	font-family: "AvenirLTStd-Medium";
 	color: #BFBFBF;
 	padding-bottom: 0.2vw;
 }
+
+
+.lead-name{
+    font-size: 50px;
+
+}
+.lead-title{
+    font-size: 30px;
+
+}
+.dis-obj{
+    display: none;
+
+}
+footer p{
+    font-size: 20px;
+}
+
+@media (max-width: 660px) {
+    .lead-name{
+        font-size: 2.5rem;
+
+    }
+    .lead-title{
+        font-size: 1.5rem;
+    
+    }
+    .hid-obj{
+        display: none;
+    
+    }
+    .dis-obj{
+        display: block;
+    }
+    footer p{
+        font-size: 3vw;
+    }
+}
+    

@@ -263,7 +263,7 @@ header {
 }
 
 .list-def {
-    font-size:1.1vw; 
+    font-size:20px; 
     color:#BFBFBF;
 }
 
@@ -389,7 +389,7 @@ header {
         margin-left:5vw ;
     }
     .list-def {
-        font-size: 2vw !important;
+        font-size: 3vw !important;
     }
 
     .list-head {
@@ -445,7 +445,7 @@ header {
     }
 
     .list-def {
-        font-size: 3.5vw !important;
+        font-size: 3vw !important;
         text-align: left;
     }
 
@@ -503,7 +503,7 @@ header {
         align-items: center;
         justify-content: center;
     }
-
+    
 } 
 
 .cells-container,.container2 {
@@ -591,3 +591,4 @@ header {
     background:url(../images/SAIC.png) no-repeat center center;
     background-color: rgb(255, 191, 0);
 }
+
