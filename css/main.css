@@ -384,7 +384,10 @@ header {
     .service-head{
         font-size: 5vw !important;
     }
-
+    .service-list li{
+        margin-right:5vw ;
+        margin-left:5vw ;
+    }
     .list-def {
         font-size: 2vw !important;
     }
