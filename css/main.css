@@ -558,13 +558,12 @@ header {
     overflow: hidden;
     justify-content: center;
 }
-.head-p{
+/* .head-p{
     font-size: 3vw;
     font-family: "AvenirLTStd-Medium";
     color: #00bcd7;
-    padding-top: 10px;
 
-}
+} */
 .cells-box:hover {
     flex: 1 1 calc(90% - 20px);
     z-index: 10;
@@ -601,21 +600,25 @@ header {
 .happy-color-1 {
     background:url(../images/GDSC.png) no-repeat center center;
     background-color: #FFFFFF;
+    background-size: contain;
 }
 
 .happy-color-2 {
     background:url(../images/Heuristics.png) no-repeat center center;
-    background-color: #2222
+    background-color: #2222;
+    background-size: contain;
 }
 
 .happy-color-3 {
-    background:url(../images/GameDev.png) no-repeat center center;
-    background-color: chartreuse;
+    background:url(../images/GameDev.jpg) no-repeat center center;
+    background-color: #0000;
+    background-size: contain;
 }
 
 .happy-color-4 {
-    background:url(../images/SAIC.png) no-repeat center center;
-    background-color: rgb(255, 191, 0);
+    background:url(../images/Saic.jpg) no-repeat center center;
+    background-color: white;
+    background-size: contain;
 }
 
 @media only screen and (max-width: 500px) {
