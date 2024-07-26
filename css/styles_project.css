@@ -91,10 +91,15 @@ body {
     display: none;
 }
 @media screen and (max-width: 990px) {
+    .project {
+        height: 500px;}
     p{
         display: none;
     }
     .money{
+        display: block;
+    }
+    .copyright-text{
         display: block;
     }
     
@@ -113,5 +118,7 @@ body {
     .lead-mem{
         display: block;
     }
-    
+    .copyright-text{
+        display: block;
+    }
 }
