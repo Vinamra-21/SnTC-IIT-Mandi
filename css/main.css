@@ -308,60 +308,6 @@ header {
     font-size: 2rem;
     padding:10px;
 }
-
-@media only screen and (max-width: 990px) {
-    
-    #wheeldef {
-        text-align: center;
-    }
-    #indexDiv {
-        text-align: center;
-    }
-    .top-text {
-        font-size: 1.9vw !important; 
-    }
-
-    .logo {
-        height:12vw;
-    }
-
-    .def {
-        font-size: 2vw;
-        margin-left: 30.5vw;
-    }
-
-    .service-head{
-        font-size: 5vw !important;
-    }
-    .service-list li{
-        margin-right:5vw ;
-        margin-left:5vw ;
-    }
-    .list-def {
-        font-size: 1.7vw !important;
-    }
-
-    .list-head {
-        font-size: 2.3vw !important;
-    }
-    
-    .logo-def {
-        max-width: 90%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2vw;
-    }
-
-    .speaker-text {
-        font-size: 2vw;
-    }
-    .speaker-name {
-        font-size: 3vw;
-    }
-    
-}
 @media (max-width: 860px) {  
     .icon-menu,
     .icon-close {
@@ -439,6 +385,60 @@ header {
     }
    
 }
+@media only screen and (max-width: 990px) {
+    
+    #wheeldef {
+        text-align: center;
+    }
+    #indexDiv {
+        text-align: center;
+    }
+    .top-text {
+        font-size: 1.9vw !important; 
+    }
+
+    .logo {
+        height:12vw;
+    }
+
+    .def {
+        font-size: 2vw;
+        margin-left: 30.5vw;
+    }
+
+    .service-head{
+        font-size: 5vw !important;
+    }
+    .service-list li{
+        margin-right:5vw ;
+        margin-left:5vw ;
+    }
+    .list-def {
+        font-size: 1.7vw !important;
+    }
+
+    .list-head {
+        font-size: 2.3vw !important;
+    }
+    
+    .logo-def {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vw;
+    }
+
+    .speaker-text {
+        font-size: 2vw;
+    }
+    .speaker-name {
+        font-size: 3vw;
+    }
+    
+}
+
 
 @media (max-width: 750px) {
     .hid-obj{
