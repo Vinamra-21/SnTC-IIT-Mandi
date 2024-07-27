@@ -142,12 +142,7 @@ nav.oval-nav {
     }
 }
 
-@media (max-width: 750px) {
-    .hid-obj{
-        display: none;
-    
-    }
-}
+
 @media (max-width: 860px) {  
     .icon-menu,
     .icon-close {
@@ -226,7 +221,12 @@ nav.oval-nav {
    
 }
 
-
+@media (max-width: 750px) {
+    .hid-obj{
+        display: none;
+    
+    }
+}
 
 
 #mid-logo {
