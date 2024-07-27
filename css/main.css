@@ -201,7 +201,7 @@ nav.oval-nav {
         display: block; 
         color: white;
         text-decoration: none;
-        font-size: 32px;
+        font-size: 52px;
         border-radius: 20px;
         margin: 5px 10px; /* Add some spacing */
         background: #8888; /* Light black background */
@@ -394,7 +394,7 @@ header {
         text-align: center;
     }
     .top-text {
-        font-size: 1.7vw !important; 
+        font-size: 1.9vw !important; 
     }
 
     .logo {
@@ -450,7 +450,7 @@ header {
         margin-top: -15%;
     }
     .top-text {
-        font-size: 2.5vw !important; 
+        font-size: 2.9vw !important; 
     }
 
 
