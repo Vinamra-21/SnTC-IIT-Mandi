@@ -120,29 +120,6 @@ nav.oval-nav {
 .dropdown-button.active .icon-close {
     opacity: 1; 
 }
-
-@media (max-width: 1100px) {
-    nav.oval-nav {
-        width: 60%; 
-    }
-
-    .oval-nav {
-        padding: 20px;
-        width: 70%; 
-    }
-
-    .nav-links {
-        margin-bottom: 10px;
-    }
-
-    .logo {
-        position: static;
-        transform: none;
-        margin-bottom: 10px;
-    }
-}
-
-
 @media (max-width: 860px) {  
     .icon-menu,
     .icon-close {
@@ -220,6 +197,29 @@ nav.oval-nav {
     }
    
 }
+@media (max-width: 1100px) {
+    nav.oval-nav {
+        width: 60%; 
+    }
+
+    .oval-nav {
+        padding: 20px;
+        width: 70%; 
+    }
+
+    .nav-links {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+}
+
+
+
 
 @media (max-width: 750px) {
     .hid-obj{

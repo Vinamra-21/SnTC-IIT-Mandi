@@ -141,13 +141,7 @@ footer.main {
 footer p{
     font-size: 20px;
 }
-@media screen and (max-width: 749px) {
-    .dis-obj{
-        display: block;
-        text-align: center;
-    }
-    
-}
+
 @media (max-width: 660px) {
     .lead-name{
         font-size: 2.5rem;
@@ -185,6 +179,13 @@ footer p{
         text-align: center;
         font-size: 300px;
     }
+}
+@media screen and (max-width: 749px) {
+    .dis-obj{
+        display: block;
+        text-align: center;
+    }
+    
 }
 #particles-js {
     position: fixed;
