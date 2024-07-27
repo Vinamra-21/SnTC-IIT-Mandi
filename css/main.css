@@ -638,4 +638,5 @@ header {
     .cells-container:hover .cells-box:not(:hover) {
         flex: 1 1 calc(100% - 20px);
     }
+    
 }
