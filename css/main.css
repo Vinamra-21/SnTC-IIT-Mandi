@@ -96,6 +96,7 @@ nav.oval-nav {
     cursor: pointer;
     position: relative;
     outline: none;
+    display: none;
 }
 
 .icon-menu,
@@ -142,6 +143,12 @@ nav.oval-nav {
 }
 
 @media (max-width: 750px) {
+    .hid-obj{
+        display: none;
+    
+    }
+}
+@media (max-width: 860px) {  
     .icon-menu,
     .icon-close {
         display: block;
@@ -170,8 +177,8 @@ nav.oval-nav {
     .dropdown-button { 
         position: absolute;
         right: 10px; 
-        display: block; 
-        margin-right: 30px;
+        display: flex; 
+        margin-right: 10px;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -216,6 +223,7 @@ nav.oval-nav {
     svg {
         transition: transform 0.3s ease;
     }
+   
 }
 
 
@@ -414,7 +422,7 @@ header {
         margin-left:5vw ;
     }
     .list-def {
-        font-size: 3vw !important;
+        font-size: 1.7vw !important;
     }
 
     .list-head {
@@ -439,7 +447,7 @@ header {
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     
     #wheeldef {
         text-align: center;
@@ -465,7 +473,7 @@ header {
     }
 
     .service-head{
-        font-size: 6vw !important;
+        font-size: 5.5vw !important;
         font-weight: 100;
         text-align: left;
     }

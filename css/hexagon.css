@@ -141,7 +141,13 @@ footer.main {
 footer p{
     font-size: 20px;
 }
-
+@media screen and (max-width: 749px) {
+    .dis-obj{
+        display: block;
+        text-align: center;
+    }
+    
+}
 @media (max-width: 660px) {
     .lead-name{
         font-size: 2.5rem;
@@ -161,6 +167,24 @@ footer p{
     footer p{
         font-size: 3vw;
     }
+    .modifier{
+        text-align: center;
+
+    }
+    .modifier2 {
+        font-size: 3rem;
+        text-align: left;
+        margin-top: 0;
+        padding-bottom:5px ;
+    }
+    .modifier3{
+        text-align: center;
+
+    }
+    .modifier4{
+        text-align: center;
+        font-size: 300px;
+    }
 }
 #particles-js {
     position: fixed;
@@ -171,4 +195,10 @@ footer p{
     left: 0;
     z-index: -1; 
     pointer-events: none; 
+}
+@media screen and (max-width: 500px) {
+    .inter-iit-blk{
+        padding:0;
+    }
+    
 }
