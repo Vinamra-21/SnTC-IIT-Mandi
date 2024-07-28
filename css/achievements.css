@@ -48,6 +48,7 @@ body {
     justify-content: center;
     min-height: 200px;
     height: 300px; /* Initial height */
+    opacity: 1;
 }
 
 .card-content {
@@ -112,7 +113,7 @@ body {
         height: 500px;
     }
     .card4:hover,.card1:hover {
-        height: 900px;
+        height: 1000px;
     }
     
 }
