@@ -127,7 +127,7 @@ body {
     }
     .profile-overlay .social-links{
         padding-top: 1.5vw;}
-    .social-links svg{
+    .social-links a{
         padding-top: 15px;
     }
 
