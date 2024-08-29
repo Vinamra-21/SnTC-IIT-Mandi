@@ -42,9 +42,9 @@
 }
 
 .event-info {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 3px;
     margin-bottom: 20px;
     color: #888;
 }
@@ -117,8 +117,7 @@
 
     .event-image {
         margin-right: 0;
-        height: 50px;width: 50px;
-        margin-bottom: 20px;
+        height: 40px;width: 40px;
         padding-right: 10px;
     }
 
@@ -132,6 +131,11 @@
 
     .event-description {
         font-size: 14px;
+    }
+    .event-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .1rem;
     }
 
     .event-info span {
@@ -166,13 +170,13 @@
         font-size: 12px;
     }
 
-    .event-info span {
-        font-size: 12px;
-    }
-
     .event-info svg {
         width: 16px;
         height: 16px;
+    }
+    .event-info span {
+        font-size: 10px;
+
     }
 
     .event-register button {
