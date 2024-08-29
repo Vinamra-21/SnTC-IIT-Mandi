@@ -2,7 +2,7 @@
     display: flex;
     background-color: rgb(249, 245, 218);
     padding: 20px;
-    margin: 20px;
+    margin: 18px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
@@ -30,12 +30,12 @@
 .event-title {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .event-description {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #555;
     line-height: 1.5;
     position: relative;
@@ -45,7 +45,7 @@
     display: inline-flex;
     flex-direction: column;
     gap: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     color: #888;
 }
 
@@ -139,13 +139,13 @@
     }
 
     .event-info span {
-        font-size: 14px;
+        font-size: 20px;
         align-items: flex-start;
     }
 
     .event-info svg {
-        width: 20px; 
-        height: 20px; 
+        width: 24px; 
+        height: 24px; 
     }
 
     .event-register button {
@@ -171,11 +171,11 @@
     }
 
     .event-info svg {
-        width: 16px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
     }
     .event-info span {
-        font-size: 10px;
+        font-size: 20px;
 
     }
 
