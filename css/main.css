@@ -204,10 +204,7 @@ header {
     color: #00bcd7 !important;
 }
 
-.service-head {
-    color: white;
-    font-size:1.4vw; 
-}
+
 
 .list-head {
     font-size:1.2vw; 
@@ -288,8 +285,15 @@ header {
     justify-content: center;
 }
 
+
+
+
 #services {
     text-align: center;
+}
+.service-head {
+    color: white;
+    font-size:1.4vw; 
 }
 
 .service-list {
@@ -309,7 +313,22 @@ header {
     margin: 2rem;
     color: #FFFFFF;
     font-size: 2rem;
-    padding:10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.service-card a {
+    color: #66D4E8;
+    text-decoration: none; 
+}
+.service-card:hover a {
+    color: #66D4E8;
+    text-decoration: none; 
 }
 @media (max-width: 860px) {  
     .icon-menu,
