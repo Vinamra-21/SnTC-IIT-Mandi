@@ -1,0 +1,190 @@
+.event-section {
+    display: flex;
+    background-color: rgb(249, 245, 218);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.event-image {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.event-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-content {
+    flex: 2;
+}
+
+.event-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.5;
+    position: relative;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.event-info span {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.event-info svg {
+    margin-right: 10px;
+    width: 24px; 
+    height: 24px;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.event-register {
+    margin-top: 20px;
+}
+
+.event-register button {
+    background-color: #ff7f50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-register button:hover {
+    background-color: #e67350;
+}
+
+.event-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.event-link:hover {
+    color: #0056b3;
+}
+
+
+
+.show-more {
+    display: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.show-more:hover {
+    color: #0056b3;
+}
+
+
+@media (max-width: 700px) {
+    .event-section {
+        flex-direction: row;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .event-image {
+        margin-right: 0;
+        height: 50px;width: 50px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+    }
+
+    .event-content {
+        flex: 1;
+    }
+    
+    .event-title {
+        font-size: 24px;
+    }
+
+    .event-description {
+        font-size: 14px;
+    }
+
+    .event-info span {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+    .event-info svg {
+        width: 20px; 
+        height: 20px; 
+    }
+
+    .event-register button {
+        font-size: 14px;
+        width: 100%;
+    }
+    .content-hid {
+        display: none;
+        overflow: hidden;
+    }
+    .show-more {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .event-title {
+        font-size: 20px;
+    }
+
+    .event-description {
+        font-size: 12px;
+    }
+
+    .event-info span {
+        font-size: 12px;
+    }
+
+    .event-info svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .event-register button {
+        font-size: 14px;
+        width: 100%;
+    }
+    .content-hid {
+        display: none;
+        overflow: hidden;
+    }
+
+    .show-more {
+        display: block;
+    }
+}
