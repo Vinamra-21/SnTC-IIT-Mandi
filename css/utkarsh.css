@@ -1,195 +1,151 @@
 .event-section {
     display: flex;
+    flex-direction: row;
     background-color: rgb(249, 245, 218);
     padding: 20px;
     margin: 18px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    align-items: center;
 }
 
-.card-link {
-    text-decoration: none;
+.event-section:hover {
+    transform: scale(1.02);
 }
 
 .event-image {
     flex: 1;
     max-width: 400px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .event-image img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.event-image img:hover {
+    transform: scale(1.05);
 }
 
 .event-content {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .event-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .event-description {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #555;
-    line-height: 1.5;
-    position: relative;
+    line-height: 1.7;
 }
 
 .event-info {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    gap: 3px;
-    margin-bottom: 3px;
+    gap: 8px;
+    margin-bottom: 20px;
     color: #888;
 }
 
 .event-info span {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .event-info svg {
     margin-right: 10px;
-    width: 24px; 
+    width: 24px;
     height: 24px;
-    max-width: 100%;
-    max-height: 100%; 
-}
-
-.event-register {
-    margin-top: 20px;
+    color: #888;
 }
 
 .event-register button {
     background-color: #23C5D8;
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    align-self: flex-start;
 }
 
 .event-register button:hover {
-    background-color: #23C5D8;
-    ;
+    background-color: #1baabf;
 }
-
-.event-link {
-    display: inline-block;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.event-link:hover {
-    color: #0056b3;
-}
-
-
 
 .show-more {
     display: none;
     color: #007bff;
     cursor: pointer;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .show-more:hover {
     color: #0056b3;
 }
 
-
 @media (max-width: 700px) {
     .event-section {
-        flex-direction: row;
+        flex-direction: column;
         padding: 10px;
         margin: 10px;
     }
 
     .event-image {
         margin-right: 0;
-        height: 40px;width: 40px;
-        padding-right: 10px;
+        margin-bottom: 15px;
     }
 
-    .event-content {
-        flex: 1;
-    }
-    
     .event-title {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .event-description {
         font-size: 14px;
     }
-    .event-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .1rem;
-    }
 
     .event-info span {
-        font-size: 20px;
         align-items: flex-start;
-    }
-
-    .event-info svg {
-        width: 24px; 
-        height: 24px; 
+        font-size: 16px;
     }
 
     .event-register button {
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
-    }
-    .content-hid {
-        display: none;
-        overflow: hidden;
-    }
-    .show-more {
-        display: block;
     }
 }
 
 @media (max-width: 500px) {
     .event-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .event-description {
         font-size: 12px;
     }
 
-    .event-info svg {
-        width: 24px;
-        height: 24px;
-    }
     .event-info span {
-        font-size: 20px;
-
+        font-size: 14px;
     }
 
     .event-register button {
         font-size: 14px;
         width: 100%;
-    }
-    .content-hid {
-        display: none;
-        overflow: hidden;
-    }
-
-    .show-more {
-        display: block;
     }
 }
