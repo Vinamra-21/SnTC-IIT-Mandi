@@ -68,7 +68,7 @@
 }
 
 .event-register button {
-    background-color: #06B9D9;
+    background-color: #23C5D8;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -79,7 +79,7 @@
 }
 
 .event-register button:hover {
-    background-color: #007bff;
+    background-color: #23C5D8;
     ;
 }
 
